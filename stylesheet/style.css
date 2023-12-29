@@ -1,0 +1,99 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+}
+header { 
+    background-color: white;
+}
+.logo-img {
+    padding: 5px;
+    margin: 5px;
+    height: fit-content;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin: 20px 50px ;
+}
+
+.fondo-img {
+    background-image: url(./pastta\ nostra\ local.jpg);
+    height: 400px;
+    background-size: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    
+}
+
+.fondo-img h1 {
+    color: white;
+    font-size: 70px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.fondo-img p {
+    background-color: beige;
+    padding: 8px;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.fondo-img i {
+    background-color: beige;
+    padding: 8px;
+    font-size: 18px;
+    margin: 4px;
+} 
+
+.texto {
+    background-color: white;
+    font-size: 20px;
+    justify-content: center;
+    padding: 70px 500px;
+}
+
+/* Archivo Carta */
+
+.plato-img {
+    background-image: url(./fondo\ de\ \ carta.webp);
+    height: 450px;
+    background-size:cover;
+    font-size: 70px;
+    color: white;
+    padding: 5px 520px;
+}
+
+.opciones-carta {
+    background-color: white;
+    font-size: 30px;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Archivo contacto*/
+
+.reserva-img {
+    background-image: url(./imagen\ reservas.jpg);
+    height: 550px;
+    background-size:cover;
+    font-size: 80px;
+    color: white;
+    padding: 30px 520px;
+}
+
+.opciones-reservas {
+    background-color: white;
+    font-size: 30px;
+    justify-content: center;
+    padding: 10px 280px;
+}
