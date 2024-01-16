@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasta Nostra|Más que pastas</title>
+    <title>Pasta Nostra | Más que pastas</title>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Barlow:wght@300&family=Cinzel&family=Poppins:wght@300&family=Tajawal&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/3e593f07e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -14,7 +15,7 @@
             <label for="logo-img">
                 <a href=""><img src="./stylesheet/Pasta Nostra logo.jpg" alt=""></a>
             </label>
-            <a href="html/inicio.html">Galería</a>
+            <a href="html/galeria.html">Galería</a>
             <a href="html/nosotros.html">Nosotros</a>
             <a href="html/carta.html">Carta</a>
             <a href="html/contacto.html">Contacto</a>
@@ -27,15 +28,46 @@
         </div>
     </header>
 
-<main>
-        <div class="texto">
-            <p>Bienvenidos a Pasta Nostra</p>
-            <p>Aquí hacemos más que pastas. </p>
-        </div>
+<main> 
+            <p class="texto-main">Bienvenidos a Pasta Nostra,<br> aquí hacemos más que pastas.</p> 
+        <!-- Con bootstrap -->
+        <span class="cartas-main">
+            <img src="./stylesheet/imagen carta 1 main.jpeg" class="imagen-carta1" alt="">
+            <img src="./stylesheet/imagen carta 2 main.jpg" class="imagen-carta2" alt="">
+            <div class="texto-carta">
+              <p>Somos Pasta Nostra</p>
+            </div>
+        </span>
+
 </main>
 
-<footer>
-      
+<footer class="pie-pagina">
+       <div class="grupo-1">
+        <div class="box">
+          <figure>
+             <a href="#">
+              <img src="./stylesheet/pasta nostra footer.png" alt="Logo pasta nostra">
+             </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h6>NOSOTROS</h6>
+          <p>Somos Pasta Nostra, un Restaurante de pastas típicas Italianas. </p>
+          <p>Contamos con una distinguida carta, terraza natural, barra de tragos y gran variedad de vinos.</p>
+        </div>
+        <div class="box">
+          <h6>SEGUINOS</h6>
+          <div class="redes-sociales">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-envelope-open"></i>
+            <i class="fa-solid fa-phone"></i>
+          </div>
+        </div>
+       </div>
+       <div class="grupo-2">
+        <small>©copy; 2024 <b>Pasta Nostra</b> - Todos los derechos reservados.</small>
+       </div>
 </footer>
 
 </body>
