@@ -3,94 +3,115 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Cinzel', serif;
 }
-header { 
-    background-color: white;
+ 
+.body-inicio { 
+    background-image: url(./imagen\ inicio.jpg);
+    background-size: cover;
+    height: 1102px;
+    width: 100%;
 }
 .logo-img {
     padding: 5px;
-    margin: 5px;
+    margin: 6px;
     height: fit-content;
 }
+
 nav a {
     display: inline-block;
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 20px 50px ;
+    font-size: 23px;
 }
 
 .fondo-img {
-    background-image: url(./pastta\ nostra\ local.jpg);
-    height: 400px;
-    background-size: auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     display: flex;
+    
 }
 
 .fondo-img h1 {
     color: white;
-    font-size: 70px;
+    font-size: 90px;
     padding: 20px;
-    margin: 10px;
+    margin: 80px;
 }
 
 .fondo-img p {
     background-color: beige;
     padding: 8px;
     font-size: 20px;
-    margin: 15px;
+    margin: 21px;
 }
 
 .fondo-img i {
     background-color: beige;
     padding: 8px;
-    font-size: 18px;
-    margin: 4px;
+    font-size: 21px;
 } 
 
-.texto-main {
+.main-inicio {
+    display: flex;
+    margin: 180px;
     background-color: white;
-    font-size: 20px;
-    justify-content: center;
-    padding: 70px 500px;
+    padding: 3px;
+}
+.carta-1 {
+    width: 300px;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    overflow: hidden; 
+    margin: 12px;
+}
+.carta-1 a {
+    text-decoration: none;
+    font-size: 17px;
 }
 
-.cartas-main {
-    display: inline-block;
-    margin: 2px 20px 60px 190px;
-}
-.imagen-carta1 {
-    width: 32rem;
-    padding: 50px;
+.titulo-carta1 {
+   font-size: 20px;
 }
 
-.imagen-carta2 {
-    width: 27rem;
-    padding: 50px;
+.carta-2 {
+    width: 300px;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    overflow: hidden; 
+    margin: 15px;
+}
+.carta-2 a {
+    text-decoration: none;
+    font-size: 17px;
 }
 
-.texto-carta {
-    text-align: center;
+.titulo-carta2 {
+   font-size: 20px;
 }
 
-.nosotros-footer{
-    text-align: left;
+.carta-3 {
+    width: 300px;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    overflow: hidden; 
+    margin: 15px;
 }
-.horarios-footer {
-    text-align: center;
+.carta-3 a {
+    text-decoration: none;
+    font-size: 17px;
 }
-.contacto-footer {
-    text-align: right;
+
+.titulo-carta3 {
+   font-size: 20px;
 }
+
 .pie-pagina {
     width: 100%;
-    background-color: #967444;
+    background-color:  #733c13;
+    height: 350px;
 }
 .pie-pagina .grupo-1 {
     width: 100%;
@@ -117,7 +138,7 @@ nav a {
     font-size: 20px;
 }
 .pie-pagina .grupo-1 .box p {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 .redes-sociales i{
     display: inline-block;
@@ -125,8 +146,8 @@ nav a {
     width: 45px;
     height: 45px;
     line-height: 45px;
-    margin-right: 10px;
-    background-color:#b38b5b;
+    margin-right: 20px;
+    background-color:#91744c;
     text-align: center;
     transition: all 300ms ease;
 }
@@ -139,7 +160,46 @@ nav a {
     color: black;
 }
 .grupo-2{
-    color: bla;
+    color: black;
+}
+@media only screen and (min-width:360px) and (max-width:499px) {
+    header .logo-img {
+        background-image: url(./imagen\ grande\ pasta\ nostra\ 2.jpg);
+        width: 100%;
+        height: 900px;
+        background-size: auto;
+    }
+
+    .nav-inicio {
+        display: inline-block;
+    }
+
+    .logo-img a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        margin: 20px 50px ;
+        font-size: 10px;
+    }
+
+    .main-inicio {
+        display: flex;
+        background-color: white;
+        padding: 10px;
+    }
+
+    .carta-1 {
+        background-color: white;
+    }
+
+    .carta-2 {
+        background-color: white;
+    }
+
+    .carta-3 {
+        background-color: white;
+    }
+
 }
 
 @media only screen and (max-width:500px) {
@@ -153,32 +213,28 @@ nav a {
         display: block;
     }
 
-    .fondo-img {
-        background-image: url(./pastta\ nostra\ local.jpg);
-        background-size: cover;
-        width: 1045px;
-    }
-    .cartas-main {
-        margin: 2px 10px 60px 250px;
+    .nav-inicio {
         display: inline-block;
     }
-    .imagen-carta2 {
-        width: 32rem;
+
+    .fondo-img {
+        background-size: cover;
+        width: 1360px;
     }
-    .texto-carta {
-        font-size: 22px;
-    }
+
     .pie-pagina {
-        background-color: #967444;
+        background-color: #733c13;
         width: 1045px;
         height: 560px;  
     }
+
     .pie-pagina .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 30px;
         padding: 35px 0px;
     }
+
     .pie-pagina .grupo-1 .box figure {
         width: 100%;
         height: 100%;
@@ -186,59 +242,75 @@ nav a {
         justify-content: center;
         align-items: center;
     }
-    
+
+    .pie-pagina {
+        background-color: #733c13;
+        height: 600px;  
+        width: 800px;
+    }
 }
 
     @media only screen and (min-width:501px) and (max-width:960px){
         .fondo-img {
-            background-image: url(./pastta\ nostra\ local.jpg);
             background-size: cover;
-            width: 1030px;
+            width: 1360px;
             height: 400px;
         }
+
         .logo-img {
             padding: 5px;
             margin: 6px;
             height: fit-content;
         }
+
         nav a {
             display: block;
             font-size: 26px;
         }
+        
+        .nav-inicio {
+            display: inline-block;
+        }
+
         .texto-main {
             width: 100%;
             display: flex;
             justify-content: center;
             font-size: 20px;
         }
-        .cartas-main {
-            margin: 2px 10px 60px 250px;
-            display: inline-block;
+
+        .carta-1 {
+            background-color: white;
         }
-        .imagen-carta2 {
-            width: 32rem;
+    
+        .carta-2 {
+            background-color: white;
         }
-        .texto-carta {
-            font-size: 22px;
+    
+        .carta-3 {
+            background-color: white;
         }
+
         .pie-pagina {
-            background-color: #967444;
-            width: 1100px;
-            height: 500px;  
+            background-color: #733c13;
+            height: 600px;  
+            width: 1300px;
         }
+
         .pie-pagina .grupo-1 {
             width: 90%;
             grid-template-columns: repeat(1,1fr);
-            grid: 40px;
-            padding: 45px 0px;
+            grid-gap: 30px;
+            padding: 35px 0px;
         }
+
         .pie-pagina .grupo-1 .box figure {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-        }  
+        }
     }
 
 /* Archivo carta */
@@ -252,11 +324,12 @@ nav a {
     padding: 5px 520px;
 }
 
-.opciones-carta {
+.opciones-carta a{
     background-color: white;
-    font-size: 30px;
-    justify-content: center;
-    padding: 10px;
+    font-size: 20px;
+    padding: 10px 20px 0 50px;
+    color: black;
+    
 }
 
 @media only screen and (max-width:500px) {
@@ -273,9 +346,9 @@ nav a {
         font-size: 95px;
     }
 
-    .opciones-carta {
+    .opciones-carta a{
         display: block;
-        font-size: 60px;
+        font-size: 35px;
     }
 }
 
@@ -292,9 +365,9 @@ nav a {
         display: flex;
         justify-content: center;
     }
-    .opciones-carta {
+    .opciones-carta a{
         display: block;
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 
@@ -305,22 +378,38 @@ nav a {
     background-image: url(./imagen\ reservas.jpg);
     height: 550px;
     background-size:cover;
-    padding: 30px 520px;
+    padding: 30px 480px;
 }
+
 .reserva-img h3 {
     padding: 30px 10px;
-    font-size: 80px;
+    font-size: 70px;
     color: white;
-
 }
 
+.opciones-reservas a{
+    color: black;
+}
 .opciones-reservas {
     background-color: white;
-    font-size: 30px;
+    font-size: 10px;
     justify-content: center;
-    padding: 10px 275px;
+    padding: 10px 10px 0px 200px;
 }
 
+@media only screen and (min-width:360px){
+    .opciones-reservas a{
+        background-color: white;
+        font-size: 35px;
+        justify-content: center;
+        padding: 10px 30px 0px 5px;
+    }
+    .reserva-img h3 {
+        padding: 30px 15px;
+        font-size: 80px;
+        color: white;
+    }
+}
 @media only screen and (max-width:500px) {
     .reserva-img {
         background-image: url(./imagen\ reservas.jpg);
@@ -348,9 +437,9 @@ nav a {
 
 @media only screen and (min-width:501px) and (max-width:960px){
     .reserva-img {
-     background-image: url(./imagen\ reservas.jpg);
-     height: 585px;
-     background-size: cover;
+        background-image: url(./imagen\ reservas.jpg);
+        height: 585px;
+        background-size: cover;
     }
 
     .reserva-img h3{
@@ -362,7 +451,7 @@ nav a {
 
     .opciones-reservas {
         padding: 12px;
-        font-size: 40px;
+        font-size: 43px;
         margin: 4px;
         display: block;
     }
@@ -374,7 +463,7 @@ nav a {
   
  .img-contacto {
     background-image: url(./fondo\ de\ contacto.webp);
-    height: 400px;
+    height: 450px;
     width: 1370px;
  }
 
@@ -387,79 +476,100 @@ nav a {
     justify-content: center;
  }
 
- .opciones-contacto {
+ .opciones-contacto a{
     justify-content: center;
-    display: inline-block;
-    padding: 10px 200px;
-    font-size: 23px;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: black;
  }
-
+    
  @media only screen and (max-width:500px) {
   .img-contacto {
     background-image: url(./fondo\ de\ contacto.webp);
-    height: 500px;
+    height: 250px;
     background-size:cover;
     padding: 30px 20px;
+    width: 500px;
   }  
  .img-contacto h4 {
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: 90px;
+    font-size: 45px;
     padding: 10px 50px;
   }
- .opciones-contacto {
-    font-size: 45px;
-    padding: 30px 20px;
+ .opciones-contacto a{
+    font-size: 18px;
+    padding: 10px 10px 0px 4px;
     display: block;
   } 
 }
-
+@media only screen and (min-width:360px) and (max-width:499px){
+    .img-contacto h4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+   }
+   .img-contacto {
+    background-image: url(./fondo\ de\ contacto.webp);
+    height: 150px;
+    background-size:cover;
+    padding: 10px 20px;
+    width: 360px;
+  }  
+  .opciones-contacto a{
+    font-size: 10px;
+    padding: 4px40px 0px 10px;
+    display: block;
+    margin: 10px;
+}
+}
 @media only screen and (min-width:501px) and (max-width:960px) {
    .img-contacto h4{
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: 90px;
+    font-size: 40px;
     padding: 10px 50px;
    }
    .img-contacto {
     background-image: url(./fondo\ de\ contacto.webp);
-    height: 500px;
+    height: 250px;
     background-size:cover;
     padding: 30px 20px;
+    width: 500px;
   }  
-  .opciones-contacto {
-    font-size: 35px;
-    padding: 30px 20px;
+  .opciones-contacto a{
+    font-size: 17px;
+    padding: 10px 1px;
     display: block;
 }
 }
                 
 /* Archivo galería */
-.galeria-header {
-    background-image: url(./imagen\ archivo\ galeria.jpg);
-    height: 455px;
-    background-size:cover;
-}
 
-.galeria-header h3 {
+    .header-galeria .galeria-header {
+    background-image: url(./imagen\ archivo\ galeria.jpg);
+    height: 460px;
+    background-size:cover;
+    width: 100%;
     font-size: 25px;
     padding: 30px 510px;
     color: white;
 }
-
-.opciones-galeria {
-    font-size: 10px;
-    padding: 25px;
+    .header-galeria .opciones-galeria a{
+    padding: 8px;
+    color: black;
+    font-size: 20px;
 }
 
-@media only screen and (min-width:500px) {
+@media only screen and (min-width:360px) and (max-width:499px) {
     .galeria-header {
         background-image: url(./imagen\ archivo\ galeria.jpg);
         background-size: cover;
-        height: 480px;
-        width: 1350px;
+        height: 460px;
+        width: 1020px;
     }
     .galeria-header h3 {
         width: 100%;
@@ -468,8 +578,31 @@ nav a {
         font-size: 75px;
     }
     .opciones-galeria a{
-        font-size: 22px;
+        font-size: 30px;
         display: inline-block;
+        padding: 12px 5px 0px 40px;
+        margin: 15px;
+    }
+    
+}
+
+@media only screen and (min-width:500px) {
+    .galeria-header {
+        background-image: url(./imagen\ archivo\ galeria.jpg);
+        background-size: cover;
+        height: 460px;
+        width: 1050px;
+    }
+    .galeria-header h3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 75px;
+    }
+    .opciones-galeria a{
+        font-size: 30px;
+        display: inline-block;
+        padding: 10px 5px 0px 20px;
     }
 }
 
@@ -478,54 +611,232 @@ nav a {
         width: 100%;
         display: flex;
         justify-content: center;
-        padding: 40px 220px 0px 3px;
-        font-size: 85px;
+        padding: 40px 10px 0px 3px;
+        font-size: 76px;
     }
     .opciones-galeria a {
         font-size: 33px;
         display: inline-block;
+        padding: 10px 10px 0px 20px;
     }
 }
 
 /* Archivo nosotros */
-.nosotros-img {
+.header-nosotros {
     background-image: url(./imagen\ archivo\ nosotros.jpg);
     background-size: cover;
-    height: 1300px;
-    width: 1500px;
+    height: 1800px;
+    width: 1351px;
 }
 .nosotros-img h4 {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 40px 210px 0px 3px;
-    font-size: 75px;
-    color: white;
-}
-.nosotros-img p {
+    padding: 90px 20px 30px 16px;
+    font-size: 80px;
     color: white;
     text-align: center;
-    font-size: 20px;
-    padding: 30px 140px 20px 30px;
+}
+
+.header-nosotros p {
+    color: white;
+    padding: 50px;
     margin: 60px;
 }
+
+.pie-pagina {
+    width: 100%;
+    background-color: rgba(115,60,19,255);
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h6 {
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    margin-bottom: 9px;
+}
+
+.redes-sociales i{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 20px;
+    background-color:#80471bab;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.redes-sociales a:hover {
+    color: blanchedalmond;
+}
+
+.pie-pagina .grupo-2 {
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+}
+
+.grupo-2{
+    color: black;
+}
+
+ @media only screen and (min-width:360px) {
+  
+    .nosotros-img h4 {
+        font-size: 60px;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        text-align: center;
+    }
+
+    header .nosotros-img p {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+        padding: 10px 90px;
+        margin: 10px;
+    }
+
+    .pie-pagina {
+        background-color:  #733c13;
+        width: 1145px;
+        height: 560px;  
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        background-color:  #733c13;
+    }
+
+    .pie-pagina .grupo-1 .box figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} 
+
 @media only screen and (max-width:500px) {
+    
     .nosotros-img h4 {
         font-size: 80px;
         justify-content: center;
         width: 100%;
         display: flex;
     }
-    .nosotros-img p {
+    .nosotros-img span p {
+        font-size: 40px;
+        padding: 80px 140px 20px 30px;
+        margin: 90px;
+    }
+    header .nosotros-img p {
         font-size: 30px;
         text-align: center;
         width: 100%;
+        display: inline-block;
+        padding: 10px 80px;
+        margin: 50px;
+    }
+    .pie-pagina {
+        background-color:  #733c13;
+        width: 1370px;
+        height: 560px;  
+    }
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 25px 0px;
+        background-color:  #733c13;
+    }
+    .pie-pagina .grupo-1 .box figure {
+        width: 100%;
+        height: 100%;
         display: flex;
-        padding: 40px 30px;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-
+@media only screen and (min-width:501px) and (max-width:960px){
+    .nosotros-img {
+        background-image: url(./imagen\ graande\ pasta\ nostra.jpg);
+        background-size: cover;
+        height: 1370px;
+        width: 1370px;
+    }
+    .nosotros-img h4 {
+        font-size: 80px;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+    }
+    .nosotros-img span p {
+        font-size: 40px;
+        padding: 80px 140px 20px 30px;
+        margin: 90px;
+    }
+    header .nosotros-img p {
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+        padding: 10px 80px;
+        margin: 50px;
+    }
+    .pie-pagina {
+        background-color:  #733c13;
+        width: 1370px;
+        height: 560px;  
+    }
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 25px 0px;
+        background-color:  #733c13;
+    }
+    .pie-pagina .grupo-1 .box figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 
  

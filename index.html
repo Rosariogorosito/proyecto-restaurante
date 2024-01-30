@@ -7,11 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Barlow:wght@300&family=Cinzel&family=Poppins:wght@300&family=Tajawal&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./stylesheet/style.css">
     <script src="https://kit.fontawesome.com/3e593f07e0.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
-    <header>
-        <nav>
+    <link rel="shortcut icon" href="./stylesheet/Pasta Nostra logo.jpg" type="image/x-icon">
+  </head>
+<body class="body-inicio">
+    <header class="header-inicio" >
+        <nav class="nav-inicio">
             <label for="logo-img">
                 <a href=""><img src="./stylesheet/Pasta Nostra logo.jpg" alt=""></a>
             </label>
@@ -28,47 +28,63 @@
         </div>
     </header>
 
-<main> 
-            <p class="texto-main">Bienvenidos a Pasta Nostra,<br> aquí hacemos más que pastas.</p> 
-        <!-- Con bootstrap -->
-        <span class="cartas-main">
-            <img src="./stylesheet/imagen carta 1 main.jpeg" class="imagen-carta1" alt="">
-            <img src="./stylesheet/imagen carta 2 main.jpg" class="imagen-carta2" alt="">
-            <div class="texto-carta">
-              <p>Somos Pasta Nostra</p>
-            </div>
-        </span>
+<main class="main-inicio"> <!--Con bootstrap-->
+  <section>
+     <div class="carta-1">
+     <img src="./stylesheet/vinos carta 1.jpg" alt="">
+     <div class="carta1-cuerpo">
+      <h5 class="titulo-carta1">Vinos</h5>
+      <p class="texto-carta">Desde tintos robustos hasta blancos frescos, elevamos tu experiencia gastronómica con la mejor selección de vinos. </p>
+      <a href="./html/carta.html" class="btn btn-primary">Visitar carta de vinos</a>
+  </section>
 
+  <section>
+    <div class="carta-2">
+      <img src="./stylesheet/imagen carta 2.jpg" alt="">
+      <div class="carta2-cuerpo">
+       <h5 class="titulo-carta2">Eventos</h5>
+       <p class="texto-carta2">Nuestro salón cuenta con capacidad para 200 comensales, salón VIP, barra de tragos y una imponente carta de vinos.</p>
+       <a href="./html/galeria.html" class="btn btn-primary">Ir a eventos</a> 
+  </section>
+
+  <section>
+    <div class="carta-3">
+      <img src="./stylesheet/imagen carta 3.jpg" alt="">
+      <div class="carta3-cuerpo">
+       <h5 class="titulo-carta3">La verdadera pasta</h5>
+       <p class="texto-carta3">En nuestro restaurante, te invitamos a descubrir el encanto y la autenticidad de la verdadera cocina italiana. </p>
+       <a href="./html/carta.html" class="btn btn-primary">Ver carta</a> 
+  </section>
 </main>
 
-<footer class="pie-pagina">
-       <div class="grupo-1">
-        <div class="box">
-          <figure>
-             <a href="#">
-              <img src="./stylesheet/pasta nostra footer.png" alt="Logo pasta nostra">
-             </a>
-          </figure>
-        </div>
-        <div class="box">
-          <h6>NOSOTROS</h6>
-          <p>Somos Pasta Nostra, un Restaurante de pastas típicas Italianas. </p>
-          <p>Contamos con una distinguida carta, terraza natural, barra de tragos y gran variedad de vinos.</p>
-        </div>
-        <div class="box">
-          <h6>SEGUINOS</h6>
-          <div class="redes-sociales">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-solid fa-envelope-open"></i>
-            <i class="fa-solid fa-phone"></i>
-          </div>
-        </div>
-       </div>
-       <div class="grupo-2">
-        <small>©copy; 2024 <b>Pasta Nostra</b> - Todos los derechos reservados.</small>
-       </div>
-</footer>
 
+<footer class="pie-pagina">
+  <div class="grupo-1">
+   <div class="box">
+     <figure>
+        <a href="#">
+         <img src="./stylesheet/pasta nostra logo marron footer.png" alt="Logo pasta nostra">
+        </a>
+     </figure>
+   </div>
+   <div class="box">
+     <h6>NOSOTROS</h6>
+     <p>Somos Pasta Nostra, un Restaurante de pastas típicas Italianas. </p>
+     <p>Contamos con una distinguida carta, terraza natural, barra de tragos y gran variedad de vinos.</p>
+   </div>
+   <div class="box">
+     <h6>SEGUINOS</h6>
+     <div class="redes-sociales">
+       <i class="fa-brands fa-facebook-f"></i>
+       <i class="fa-brands fa-instagram"></i>
+       <i class="fa-brands fa-linkedin"></i>
+       <i class="fa-brands fa-tiktok"></i>
+     </div>
+   </div>
+  </div>
+  <div class="grupo-2">
+   <small>©copy; 2024 <b>Pasta Nostra</b> - Todos los derechos reservados.</small>
+  </div>
+</footer>
 </body>
 </html>
