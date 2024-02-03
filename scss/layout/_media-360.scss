@@ -1,0 +1,33 @@
+$background-color: white;
+
+@media (min-width: 360px){
+    header .logo-img {
+        background-image: url(./images/imagen\ grande\ pasta\ nostra\ 2.jpg);
+        width: 100%;
+        height: 900px;
+        background-size: auto;
+        .nav-inicio {
+            display: inline-block;
+        }
+        .logo-img a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            margin: 20px 50px ;
+            font-size: 10px;
+        }
+    }
+
+    .main-inicio {
+        display: flex;
+        background-color: $background-color;
+        padding: 10px;
+    }
+
+    .carta-1,
+    .carta-2,
+    .carta-3 {
+        background-color: $background-color;
+    }
+
+}

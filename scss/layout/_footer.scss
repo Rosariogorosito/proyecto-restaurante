@@ -1,0 +1,67 @@
+$footer-background-color: #733c13;
+$footer-text-color: black;
+$social-background-color: #80471bab;
+$social-hover-color: blanchedalmond;
+
+.pie-paginainicio {
+    width: 100%;
+    background-color: $footer-background-color;
+    height: 330px;
+
+    .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid: 50px;
+        padding: 45px 0px;
+
+        .box {
+            figure {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                img {
+                    width: 250px;
+                }
+            }
+
+            h6 {
+                color: $footer-text-color;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+
+            p {
+                margin-bottom: 9px;
+            }
+        }
+    }
+
+    .redes-sociales i {
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        margin-right: 20px;
+        background-color: $social-background-color;
+        text-align: center;
+        transition: all 300ms ease;
+        .redes-sociales a:hover {
+            color: $social-hover-color;
+        }
+    }
+    .pie-paginainicio .grupo-2 {
+        padding: 15px 10px;
+        text-align: center;
+        color: $text-color;
+    }
+    .grupo-2 {
+        color: $footer-text-color;
+    }
+}

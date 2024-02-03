@@ -1,0 +1,55 @@
+$background-color: white;
+$color-footer: #733c13;
+@media (min-width:501px) {
+    .fondo-img {
+        background-size: cover;
+        width: 1360px;
+        height: 400px;
+        .logo-img {
+            padding: 5px;
+            margin: 6px;
+            height: fit-content;
+            nav a {
+                display: block;
+                font-size: 26px;
+                .nav-inicio {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .main-inicio {
+        background-color: background-color;
+        .texto-main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            .carta-1,
+            .carta-2,
+            .carta-3 {
+              background-color:$background-color;
+           }
+        }
+    }
+
+    .pie-paginainicio {
+        background-color: $color-footer;
+        height: 600px;  
+        width: 1370px;
+        .pie-paginainicio .grupo-1 {
+            width: 90%;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+            .pie-paginainicio .grupo-1 .box figure {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }   
+}

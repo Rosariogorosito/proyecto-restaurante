@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasta Nostra | Más que pastas</title>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Barlow:wght@300&family=Cinzel&family=Poppins:wght@300&family=Tajawal&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/3e593f07e0.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./stylesheet/Pasta Nostra logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/pasta nostra logo blanco.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
-<body class="body-inicio">
+<body class="body-inicio" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
     <header class="header-inicio" >
         <nav class="nav-inicio">
             <label for="logo-img">
-                <a href=""><img src="./stylesheet/Pasta Nostra logo.jpg" alt=""></a>
+                <a href=""><img src="./assets/Pasta Nostra logo archivo inicio.jpg" alt="Logo Pasta Nostra"></a>
             </label>
-            <a href="html/galeria.html">Galería</a>
-            <a href="html/nosotros.html">Nosotros</a>
-            <a href="html/carta.html">Carta</a>
-            <a href="html/contacto.html">Contacto</a>
-            <a href="html/reservas.html">Reservas</a>
+            <a href="pages/galeria.html">Galería</a>
+            <a href="pages/nosotros.html">Nosotros</a>
+            <a href="pages/carta.html">Carta</a>
+            <a href="pages/contacto.html">Contacto</a>
+            <a href="pages/reservas.html">Reservas</a>
         </nav>
         <div class="fondo-img">
             <h1>Pasta Nostra</h1>
@@ -28,42 +30,42 @@
         </div>
     </header>
 
-<main class="main-inicio"> <!--Con bootstrap-->
+<main class="main-inicio" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"> <!--Con bootstrap-->
   <section>
      <div class="carta-1">
-     <img src="./stylesheet/vinos carta 1.jpg" alt="">
+     <img src="./assets/imagen carta 1.jpg" alt="Imagen vinos de Pasta Nostra">
      <div class="carta1-cuerpo">
       <h5 class="titulo-carta1">Vinos</h5>
       <p class="texto-carta">Desde tintos robustos hasta blancos frescos, elevamos tu experiencia gastronómica con la mejor selección de vinos. </p>
-      <a href="./html/carta.html" class="btn btn-primary">Visitar carta de vinos</a>
+      <a href="./pages/carta.html" class="btn btn-primary">Visitar carta de vinos</a>
   </section>
 
   <section>
     <div class="carta-2">
-      <img src="./stylesheet/imagen carta 2.jpg" alt="">
+      <img src="./assets/imagen carta 2.jpg" alt="Imagen eventos de Pasta Nostra">
       <div class="carta2-cuerpo">
        <h5 class="titulo-carta2">Eventos</h5>
        <p class="texto-carta2">Nuestro salón cuenta con capacidad para 200 comensales, salón VIP, barra de tragos y una imponente carta de vinos.</p>
-       <a href="./html/galeria.html" class="btn btn-primary">Ir a eventos</a> 
+       <a href="./pages/galeria.html" class="btn btn-primary">Ir a eventos</a> 
   </section>
 
   <section>
     <div class="carta-3">
-      <img src="./stylesheet/imagen carta 3.jpg" alt="">
+      <img src="./assets/imagen carta 3.jpg" alt="Imagen carta de Pasta Nostra">
       <div class="carta3-cuerpo">
        <h5 class="titulo-carta3">La verdadera pasta</h5>
        <p class="texto-carta3">En nuestro restaurante, te invitamos a descubrir el encanto y la autenticidad de la verdadera cocina italiana. </p>
-       <a href="./html/carta.html" class="btn btn-primary">Ver carta</a> 
+       <a href="./pages/carta.html" class="btn btn-primary">Ver carta</a> 
   </section>
 </main>
 
 
-<footer class="pie-pagina">
+<footer class="pie-paginainicio">
   <div class="grupo-1">
    <div class="box">
      <figure>
         <a href="#">
-         <img src="./stylesheet/pasta nostra logo marron footer.png" alt="Logo pasta nostra">
+         <img src="./assets/pasta nostra logo marron footer.png" alt="Logo pasta nostra">
         </a>
      </figure>
    </div>
@@ -86,5 +88,10 @@
    <small>©copy; 2024 <b>Pasta Nostra</b> - Todos los derechos reservados.</small>
   </div>
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init();
+   </script>
 </body>
 </html>

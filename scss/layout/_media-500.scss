@@ -1,0 +1,41 @@
+$background-color: #733c13;
+
+@media (max-width:500px){
+    .logo-img {
+        padding: 5px;
+        margin: 6px;
+        height: fit-content;
+        .nav-inicio {
+            display: inline-block;
+            nav a {
+                font-size: 25px;
+                display: block;
+            }
+        }
+    }
+
+    .fondo-img {
+        background-size: cover;
+        width: 1360px;
+    }
+
+    .pie-paginainicio {
+        background-color: $background-color;
+        width: 1360px;
+        height: 560px;  
+        .pie-paginainicio .grupo-1 {
+            width: 90%;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+            .pie-paginainicio .grupo-1 .box figure {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+}
+}

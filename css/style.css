@@ -1,15 +1,14 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Cinzel', serif;
 }
- 
+
 .body-inicio { 
-    background-image: url(./imagen\ inicio.jpg);
+    background-image: url(../assets/imagen\ inicio.jpg);
     background-size: cover;
-    height: 1102px;
+    height: 1002px;
     width: 100%;
 }
 .logo-img {
@@ -108,12 +107,12 @@ nav a {
    font-size: 20px;
 }
 
-.pie-pagina {
+.pie-paginainicio {
     width: 100%;
     background-color:  #733c13;
-    height: 350px;
+    height: 330px;
 }
-.pie-pagina .grupo-1 {
+.pie-paginainicio .grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -122,22 +121,22 @@ nav a {
     grid: 50px;
     padding: 45px 0px;
 }
-.pie-pagina .grupo-1 .box figure {
+.pie-paginainicio .grupo-1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pie-pagina .grupo-1 .box figure img {
+.pie-paginainicio .grupo-1 .box figure img {
     width: 250px;
 }
-.pie-pagina .grupo-1 .box h6 {
+.pie-paginainicio .grupo-1 .box h6 {
     color: black;
     margin-bottom: 25px;
     font-size: 20px;
 }
-.pie-pagina .grupo-1 .box p {
+.pie-paginainicio .grupo-1 .box p {
     margin-bottom: 9px;
 }
 .redes-sociales i{
@@ -154,7 +153,7 @@ nav a {
 .redes-sociales a:hover {
     color: blanchedalmond;
 }
-.pie-pagina .grupo-2 {
+.pie-paginainicio .grupo-2 {
     padding: 15px 10px;
     text-align: center;
     color: black;
@@ -162,9 +161,9 @@ nav a {
 .grupo-2{
     color: black;
 }
-@media only screen and (min-width:360px) and (max-width:499px) {
+@media only screen and (min-width:360px) {
     header .logo-img {
-        background-image: url(./imagen\ grande\ pasta\ nostra\ 2.jpg);
+        background-image: url(./images/imagen\ grande\ pasta\ nostra\ 2.jpg);
         width: 100%;
         height: 900px;
         background-size: auto;
@@ -222,31 +221,25 @@ nav a {
         width: 1360px;
     }
 
-    .pie-pagina {
+    .pie-paginainicio {
         background-color: #733c13;
-        width: 1045px;
+        width: 1360px;
         height: 560px;  
     }
 
-    .pie-pagina .grupo-1 {
+    .pie-paginainicio .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 30px;
         padding: 35px 0px;
     }
 
-    .pie-pagina .grupo-1 .box figure {
+    .pie-paginainicio .grupo-1 .box figure {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .pie-pagina {
-        background-color: #733c13;
-        height: 600px;  
-        width: 800px;
     }
 }
 
@@ -271,6 +264,11 @@ nav a {
         .nav-inicio {
             display: inline-block;
         }
+        
+
+        .main-inicio {
+            background-color: white;
+        }
 
         .texto-main {
             width: 100%;
@@ -291,20 +289,20 @@ nav a {
             background-color: white;
         }
 
-        .pie-pagina {
+        .pie-paginainicio {
             background-color: #733c13;
             height: 600px;  
-            width: 1300px;
+            width: 1370px;
         }
 
-        .pie-pagina .grupo-1 {
+        .pie-paginainicio .grupo-1 {
             width: 90%;
             grid-template-columns: repeat(1,1fr);
             grid-gap: 30px;
             padding: 35px 0px;
         }
 
-        .pie-pagina .grupo-1 .box figure {
+        .pie-paginainicio .grupo-1 .box figure {
             width: 100%;
             height: 100%;
             display: flex;
@@ -316,7 +314,7 @@ nav a {
 /* Archivo carta */
 
 .plato-img {
-    background-image: url(./fondo\ de\ \ carta.webp);
+    background-image: url(../assets/imagen\ archivo\ carta.webp);
     height: 450px;
     background-size:cover;
     font-size: 70px;
@@ -334,7 +332,7 @@ nav a {
 
 @media only screen and (max-width:500px) {
     .plato-img {
-        background-image: url(./fondo\ de\ \ carta.webp);
+        background-image: url(../assets/imagen\ archivo\ carta.webp);
         background-size: cover;
         width: 300px;
         height: 500px;
@@ -354,7 +352,7 @@ nav a {
 
 @media only screen and (min-width:501px) and (max-width:960px) {
     .plato-img {
-        background-image: url(./fondo\ de\ \ carta.webp);
+        background-image: url(../assets/imagen\ archivo\ carta.webp);
         background-size: cover;
         width: 300px;
         height: 500px;
@@ -375,7 +373,7 @@ nav a {
  
 
 .reserva-img {
-    background-image: url(./imagen\ reservas.jpg);
+    background-image: url(../assets/imagen\ archivo\ reservas.jpg);
     height: 550px;
     background-size:cover;
     padding: 30px 480px;
@@ -412,7 +410,7 @@ nav a {
 }
 @media only screen and (max-width:500px) {
     .reserva-img {
-        background-image: url(./imagen\ reservas.jpg);
+        background-image: url(../assets/imagen\ archivo\ reservas.jpg);
         height: 450px;
         background-size: cover;
         width: 800px;
@@ -437,7 +435,7 @@ nav a {
 
 @media only screen and (min-width:501px) and (max-width:960px){
     .reserva-img {
-        background-image: url(./imagen\ reservas.jpg);
+        background-image: url(../assets/imagen\ archivo\ reservas.jpg);
         height: 585px;
         background-size: cover;
     }
@@ -462,9 +460,10 @@ nav a {
 
   
  .img-contacto {
-    background-image: url(./fondo\ de\ contacto.webp);
-    height: 450px;
-    width: 1370px;
+    background-image: url(../assets/imagen\ archivo\ contacto.webp);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
  }
 
  .img-contacto h4 {
@@ -485,7 +484,7 @@ nav a {
     
  @media only screen and (max-width:500px) {
   .img-contacto {
-    background-image: url(./fondo\ de\ contacto.webp);
+    background-image: url(./images/fondo\ de\ contacto.webp);
     height: 250px;
     background-size:cover;
     padding: 30px 20px;
@@ -512,7 +511,7 @@ nav a {
     font-size: 30px;
    }
    .img-contacto {
-    background-image: url(./fondo\ de\ contacto.webp);
+    background-image: url(./images/fondo\ de\ contacto.webp);
     height: 150px;
     background-size:cover;
     padding: 10px 20px;
@@ -534,7 +533,7 @@ nav a {
     padding: 10px 50px;
    }
    .img-contacto {
-    background-image: url(./fondo\ de\ contacto.webp);
+    background-image: url(./images/fondo\ de\ contacto.webp);
     height: 250px;
     background-size:cover;
     padding: 30px 20px;
@@ -550,7 +549,7 @@ nav a {
 /* Archivo galería */
 
     .header-galeria .galeria-header {
-    background-image: url(./imagen\ archivo\ galeria.jpg);
+    background-image: url(../assets/imagen\ archivo\ galeria.jpg);
     height: 460px;
     background-size:cover;
     width: 100%;
@@ -558,15 +557,19 @@ nav a {
     padding: 30px 510px;
     color: white;
 }
-    .header-galeria .opciones-galeria a{
-    padding: 8px;
-    color: black;
-    font-size: 20px;
-}
 
+    .header-galeria nav a {
+        font-size: 21px;
+        color: black;
+    }
+
+    .opciones-galeria {
+    display: flex;
+    }
+    
 @media only screen and (min-width:360px) and (max-width:499px) {
     .galeria-header {
-        background-image: url(./imagen\ archivo\ galeria.jpg);
+        background-image: url(../assets/imagen\ archivo\ galeria.jpg);
         background-size: cover;
         height: 460px;
         width: 1020px;
@@ -579,16 +582,19 @@ nav a {
     }
     .opciones-galeria a{
         font-size: 30px;
-        display: inline-block;
         padding: 12px 5px 0px 40px;
         margin: 15px;
+    }
+
+    .opciones-galeria {
+        display: inline-block;
     }
     
 }
 
 @media only screen and (min-width:500px) {
     .galeria-header {
-        background-image: url(./imagen\ archivo\ galeria.jpg);
+        background-image: url(../assets/imagen\ archivo\ galeria.jpg);
         background-size: cover;
         height: 460px;
         width: 1050px;
@@ -599,10 +605,13 @@ nav a {
         justify-content: center;
         font-size: 75px;
     }
-    .opciones-galeria a{
+    .opciones-galeria {
         font-size: 30px;
         display: inline-block;
         padding: 10px 5px 0px 20px;
+    }
+    .opciones-galeria a {
+        font-size: 30px;
     }
 }
 
@@ -622,34 +631,38 @@ nav a {
 }
 
 /* Archivo nosotros */
+
 .header-nosotros {
-    background-image: url(./imagen\ archivo\ nosotros.jpg);
-    background-size: cover;
-    height: 1800px;
-    width: 1351px;
+   background-image: url(../assets/imagen\ archivo\ nosotros.webp);
+   background-size: cover;
+   width: 1349px;
 }
+
 .nosotros-img h4 {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 90px 20px 30px 16px;
+    padding: 60px 20px 5px 16px;
     font-size: 80px;
     color: white;
     text-align: center;
 }
 
-.header-nosotros p {
+.texto-nosotros {
     color: white;
-    padding: 50px;
-    margin: 60px;
+    padding: 20px 40px 130px 40px;
+    margin: 120px 260px 0px 260px;
+    text-align: center;
+    font-size: 20px;
 }
 
-.pie-pagina {
+.footer-nosotros {
     width: 100%;
+    height: 100%;
     background-color: rgba(115,60,19,255);
 }
 
-.pie-pagina .grupo-1 {
+.footer-nosotros .grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -659,7 +672,7 @@ nav a {
     padding: 45px 0px;
 }
 
-.pie-pagina .grupo-1 .box figure {
+.footer-nosotros .grupo-1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
@@ -667,17 +680,17 @@ nav a {
     align-items: center;
 }
 
-.pie-pagina .grupo-1 .box figure img {
+.footer-nosotros .grupo-1 .box figure img {
     width: 250px;
 }
 
-.pie-pagina .grupo-1 .box h6 {
+.footer-nosotros .grupo-1 .box h6 {
     color: black;
     margin-bottom: 25px;
     font-size: 20px;
 }
 
-.pie-pagina .grupo-1 .box p {
+.footer-nosotros .grupo-1 .box p {
     margin-bottom: 9px;
 }
 
@@ -697,7 +710,7 @@ nav a {
     color: blanchedalmond;
 }
 
-.pie-pagina .grupo-2 {
+.footer-nosotros .grupo-2 {
     padding: 15px 10px;
     text-align: center;
     color: black;
@@ -707,8 +720,14 @@ nav a {
     color: black;
 }
 
- @media only screen and (min-width:360px) {
-  
+
+ @media only screen and (min-width:360px) and (max-width:499px) {
+    .header-nosotros {
+        background-image: url(../assets/imagen\ archivo\ nosotros.webp);
+        background-size: cover;
+        width: 1151px;
+    }
+
     .nosotros-img h4 {
         font-size: 60px;
         justify-content: center;
@@ -717,22 +736,20 @@ nav a {
         text-align: center;
     }
 
-    header .nosotros-img p {
-        font-size: 20px;
+    .texto-nosotros {
+        font-size: 30px;
+        padding: 20px 40px 130px 40px;
+        margin: 60px 130px 0px 130px;
         text-align: center;
-        width: 100%;
-        display: inline-block;
-        padding: 10px 90px;
-        margin: 10px;
     }
 
-    .pie-pagina {
+    .footer-nosotros {
         background-color:  #733c13;
         width: 1145px;
         height: 560px;  
     }
 
-    .pie-pagina .grupo-1 {
+    .footer-nosotros .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 30px;
@@ -740,7 +757,7 @@ nav a {
         background-color:  #733c13;
     }
 
-    .pie-pagina .grupo-1 .box figure {
+    .footer-nosotros .grupo-1 .box figure {
         width: 100%;
         height: 100%;
         display: flex;
@@ -750,17 +767,22 @@ nav a {
 } 
 
 @media only screen and (max-width:500px) {
+    .header-nosotros {
+        background-image: url(../assets/imagen\ archivo\ nosotros.webp);
+        background-size: cover;
+        width: 700px;
+        height: 2000px;
+    }
     
     .nosotros-img h4 {
-        font-size: 80px;
+        font-size: 60px;
         justify-content: center;
-        width: 100%;
         display: flex;
     }
-    .nosotros-img span p {
-        font-size: 40px;
-        padding: 80px 140px 20px 30px;
-        margin: 90px;
+    .texto-nosotros {
+        font-size: 20px;
+        padding: 10px;
+        margin: 20px 15px 0px 15px;
     }
     header .nosotros-img p {
         font-size: 30px;
@@ -770,19 +792,19 @@ nav a {
         padding: 10px 80px;
         margin: 50px;
     }
-    .pie-pagina {
+    .footer-nosotros {
         background-color:  #733c13;
-        width: 1370px;
+        width: 700px;
         height: 560px;  
     }
-    .pie-pagina .grupo-1 {
+    .footer-nosotros .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 30px;
         padding: 25px 0px;
         background-color:  #733c13;
     }
-    .pie-pagina .grupo-1 .box figure {
+    .footer-nosotros .grupo-1 .box figure {
         width: 100%;
         height: 100%;
         display: flex;
@@ -792,44 +814,37 @@ nav a {
 }
 
 @media only screen and (min-width:501px) and (max-width:960px){
-    .nosotros-img {
-        background-image: url(./imagen\ graande\ pasta\ nostra.jpg);
+    .header-nosotros {
+        background-image: url(../assets/imagen\ archivo\ nosotros.webp);
         background-size: cover;
-        height: 1370px;
-        width: 1370px;
+        width: 1156px;
     }
     .nosotros-img h4 {
         font-size: 80px;
         justify-content: center;
-        width: 100%;
         display: flex;
     }
-    .nosotros-img span p {
-        font-size: 40px;
-        padding: 80px 140px 20px 30px;
-        margin: 90px;
-    }
-    header .nosotros-img p {
+    
+    .header-nosotros .texto-nosotros {
         font-size: 30px;
         text-align: center;
-        width: 100%;
-        display: inline-block;
-        padding: 10px 80px;
-        margin: 50px;
+
     }
-    .pie-pagina {
+
+    .footer-nosotros {
         background-color:  #733c13;
-        width: 1370px;
+        width: 1156px;
         height: 560px;  
     }
-    .pie-pagina .grupo-1 {
+
+    .footer-nosotros .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 30px;
         padding: 25px 0px;
         background-color:  #733c13;
     }
-    .pie-pagina .grupo-1 .box figure {
+    .footer-nosotros .grupo-1 .box figure {
         width: 100%;
         height: 100%;
         display: flex;
@@ -837,6 +852,3 @@ nav a {
         align-items: center;
     }
 }
-
-
- 

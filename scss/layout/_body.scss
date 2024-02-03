@@ -1,0 +1,46 @@
+$text-color: white;
+$background-color: beige;
+
+.body-inicio { 
+    background-image: url(../assets/imagen\ inicio.jpg);
+    background-size: cover;
+    height: 1002px;
+    width: 100%;
+    .logo-img {
+        padding: 5px;
+        margin: 6px;
+        height: fit-content;
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: $text-color;
+            margin: 20px 50px;
+            font-size: 23px;
+        }
+        
+    }
+    .fondo-img {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        h1 {
+            color: $text-color;
+            font-size: 90px;
+            padding: 20px;
+            margin: 80px;
+            p,
+            i {
+                 background-color: $background-color;
+                 padding: 8px;
+                 font-size: 20px;
+                 margin: 21px;
+           }
+            
+        }
+        
+    }
+}
+
+
+
