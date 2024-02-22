@@ -1,41 +1,87 @@
-$background-color: #733c13;
+$color-footer: #7c573d;
+$color-iconos: #916e55 ;
+$background-color: white;
 
-@media (max-width:500px){
-    .logo-img {
-        padding: 5px;
-        margin: 6px;
-        height: fit-content;
-        .nav-inicio {
-            display: inline-block;
-            nav a {
-                font-size: 25px;
-                display: block;
+@media (max-width:500px) {
+    .header-inicio {
+        background-image: url(../assets/imagen\ inicio.jpg);
+        background-size: cover;
+        width: 500px;
+        height: 430px;
+        .nav-inicio label {
+            width: 3rem;
+            .logo-img {
+                padding: 5px;
+                margin: 6px;
+                justify-content: flex-end;
+                height: fit-content;
+                nav a {
+                    display: inline;
+                    font-size: 10px;
+                    .nav-inicio {
+                        display: inline;
+                        .fondo-img h1{
+                            font-size: 55px;
+                            text-align: center;
+                            margin: 20px;
+                            padding: 50px 0px 10px 0px;
+                            .fondo-img p {
+                                font-size: 13px;
+                                .fondo-img i {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
-
-    .fondo-img {
-        background-size: cover;
-        width: 1360px;
-    }
-
-    .pie-paginainicio {
+    .main-inicio {
         background-color: $background-color;
-        width: 1360px;
-        height: 560px;  
+        display: inline-block;
+        margin: 120px;
+        .texto-main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            .carta-1,
+            .carta-2,
+            .carta-3 {
+                background-color: $background-color;
+                width: 210px;
+            }
+        }
+    }
+    .pie-paginainicio {
+        background-color: $color-footer;
+        width: 500px;
+        height: 500px;
         .pie-paginainicio .grupo-1 {
-            width: 90%;
+            width: 100%;
             grid-template-columns: repeat(1,1fr);
             grid-gap: 30px;
             padding: 35px 0px;
+            background-color: $color-footer;
             .pie-paginainicio .grupo-1 .box figure {
                 width: 100%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                .pie-paginainicio .grupo-2 {
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $color-footer;
+                    .pie-paginainicio .redes-sociales i{
+                        background-color: $color-iconos;
+                    }
+                }
             }
-
         }
-}
+    }
 }

@@ -1,33 +1,37 @@
-$background-color: white;
+$background-color: #9b9999;
 
 @media (min-width: 360px){
-    header .logo-img {
-        background-image: url(./images/imagen\ grande\ pasta\ nostra\ 2.jpg);
-        width: 100%;
-        height: 900px;
-        background-size: auto;
-        .nav-inicio {
-            display: inline-block;
-        }
-        .logo-img a {
-            display: inline-block;
-            text-decoration: none;
-            color: black;
-            margin: 20px 50px ;
-            font-size: 10px;
-        }
+    .fondo-img h1 {
+        font-size: 40px; 
+        margin: 30px;
+        .fondo-img p,
+        .fondo-img i {
+          font-size: 14px; 
+          margin: 10px; 
+       }    
     }
-
-    .main-inicio {
-        display: flex;
-        background-color: $background-color;
-        padding: 10px;
-    }
-
     .carta-1,
     .carta-2,
     .carta-3 {
-        background-color: $background-color;
+        width: 100%; 
+        max-width: none; 
+        margin: 10px auto;  
+         .titulo-carta1,
+         .titulo-carta2,
+         .titulo-carta3 {
+          font-size: 16px;
+       }
     }
-
+    .pie-paginareservas {
+        background-color:  $background-color;
+        width:  955px;
+        height: 760px;
+        .pie-paginareservas .grupo-1 .box figure {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+    }
 }

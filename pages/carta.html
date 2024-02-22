@@ -4,24 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasta Nostra | Carta</title>
+    <meta name="keywords" content="Restaurante de pastas, comida, vinos, pastas, eventos especiales, terraza, sector vip, restaurante, barra de tragos, reservas">
+    <meta name="descripcion" content="Somos el mejor restaurante de pastas, contamos con gran variedad de platos de pasta típica italiana, una imponente carta de vinos y también barra de tragos, por otro lado, nuestro espacio cuenta con una terraza ambientada, salon vip y capacidad para 200 comensales">
+    <meta name="telephone" content="3329548728">
+    <meta name="author" content="rosarioaldanagorosito">
+    <meta name="geo.placename" content="argentina">
     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Barlow:wght@300&family=Cinzel&family=Poppins:wght@300&family=Tajawal&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../assets/pasta nostra logo blanco.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3e593f07e0.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../assets/Logo-PN-_1_.svg" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header-carta">
         <div class="plato-img" data-aos="fade-right">
             <h2>Carta</h2>
         </div>
         <nav class="opciones-carta">
-            <a href="">General</a>
-            <a href="">Postres/cafetería</a>
-            <a href="">Menú ejecutivo</a>
-            <a href="">Vinos y bebidas</a>
+            <a href="./general.html">Carta</a>
+            <a href="./postres.html">Postres</a>
+            <a href="./bebidas.html">Vinos y bebidas</a>
         </nav>
     </header>
 
+    <main class="main-carta">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/imagen 1 carrusel.jpg" class="d-block w-100" alt="imagen carta de Pasta Nostra">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/imagen 2 carrusel.jpg" class="d-block w-100" alt="imagen carta de Pasta Nostra">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/imagen 3 carrusel.jpg" class="d-block w-100" alt="imagen carta de Pasta Nostra">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/imagen 4 carrusel.jpg" class="d-block w-100" alt="imagen carta de Pasta Nostra">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/imagen 5 carrusel.jpeg" class="d-block w-100" alt="imagen carta de Pasta Nostra">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+          </div>
+    </main>
+
+    <footer class="pie-paginacarta" data-aos="fade-up">
+        <div class="grupo-1">
+         <div class="box">
+           <figure>
+              <a href="#">
+               <img src="../assets/Pasta-Nostra-logo-blanco-_1_.svg" alt="Logo pasta nostra" width="230rem">
+              </a>
+           </figure>
+         </div>
+         <div class="box">
+           <h6>NOSOTROS</h6>
+           <p>Somos Pasta Nostra, un Restaurante de pastas típicas Italianas. </p>
+           <p>Contamos con una distinguida carta, terraza natural, barra de tragos y gran variedad de vinos.</p>
+         </div>
+         <div class="box">
+           <h6>SEGUINOS</h6>
+           <div class="redes-sociales">
+             <i class="fa-brands fa-facebook-f"></i>
+             <i class="fa-brands fa-instagram"></i>
+             <i class="fa-brands fa-linkedin"></i>
+             <i class="fa-brands fa-tiktok"></i>
+           </div>
+         </div>
+        </div>
+        <div class="grupo-2">
+         <small>©copy; 2024 <b>Pasta Nostra</b> - Todos los derechos reservados.</small>
+        </div>
+      </footer>
+
+    <script src="../script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
      AOS.init();

@@ -1,0 +1,41 @@
+.header-inicio { 
+    background-image: url(../assets/imagen\ inicio.jpg);
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        margin: 20px 50px ;
+        font-size: 23px;
+    }
+    .fondo-img {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        .logo-img {
+            padding: 5px;
+            margin: 6px;
+            height: fit-content;
+            .fondo-img h1 {
+                color: white;
+                font-size: 90px;
+                padding: 30px;
+                margin: 90px;
+                .fondo-img p {
+                    background-color: beige;
+                    padding: 8px;
+                    font-size: 20px;
+                    margin: 21px;
+                    .fondo-img i {
+                        background-color: beige;
+                        padding: 8px;
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -6,12 +6,18 @@
     <title>Pasta Nostra | Reservas</title>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Barlow:wght@300&family=Cinzel&family=Poppins:wght@300&family=Tajawal&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../assets/pasta nostra logo blanco.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3e593f07e0.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../assets/Logo-PN-_1_.svg" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+    <meta name="keywords" content="Restaurante de pastas, comida, vinos, pastas, eventos especiales, terraza, sector vip, restaurante, barra de tragos, reservas">
+    <meta name="descripcion" content="Somos el mejor restaurante de pastas, contamos con gran variedad de platos de pasta típica italiana, una imponente carta de vinos y también barra de tragos, por otro lado, nuestro espacio cuenta con una terraza ambientada, salon vip y capacidad para 200 comensales">
+    <meta name="telephone" content="3329548728">
+    <meta name="author" content="rosarioaldanagorosito">
+    <meta name="geo.placename" content="argentina">
+  </head>
 <body>
-    <header>
-        <div class="reserva-img" data-aos="fade-right">
+    <header class="header-reservas" data-aos="fade-right">
+        <div class="reserva-img">
             <h3>Reservas</h3>
         </div>
         <nav class="opciones-reservas">
@@ -20,6 +26,101 @@
             <a href="">Escríbanos</a>
         </nav>
     </header>
+    <main class="main-reservas" data-aos="fade-right"> 
+      <h4>Reservar en Pasta Nostra</h4>
+        <form class="formulario-reservas">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Nombre</label>
+              <input type="text" name="nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre sólo acepta letras y espacios en blanco">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Apellido</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-12">
+              <label for="inputState">Direción de correo</label>
+              <input type="email" name="correo" placeholder="Escriba su correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formato de correo inválido"required>
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Cantidad de comensales</label>
+              <select id="inputState" class="form-select">
+                <option selected>Elegir...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="">Más de 10 personas</option>
+              </select>
+            </div>
+            <div>
+                <label for="inputState">Fecha</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="inputState">Horario</label>
+                <select id="reservation__form__time" name="reservation__form__time">
+                    <option selected>Elegir...</option>
+                    <optgroup label="Mediodía">
+                        <option value="1110">11:10 hs</option>
+                        <option value="1140">11:40 hs</option>
+                        <option value="1200">12:00 hs</option>
+                        <option value="1220">12:20 hs</option>
+                        <option value="1240">12:40 hs</option>
+                        <option value="1300">13:00 hs</option>
+                        <option value="1330">13:30 hs</option>
+                    </optgroup>
+                    <optgroup label="Noche">
+                        <option value="1900">19:00 hs</option>
+                        <option value="2010">20:10 hs</option>
+                        <option value="2040">20:40 hs</option>
+                        <option value="2100">21:00 hs</option>
+                        <option value="2140">21:40 hs</option>
+                        <option value="2000">22:00 hs</option>
+                        <option value="2230">22:30 hs</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="inputAddress2" placeholder="Escriba su teléfono">
+              </div>
+            <div class="boton-reservar">
+              <button type="submit" class="boton">Reservar</button>
+            </div>
+          </form>
+    </main>
+
+    <footer class="pie-paginareservas" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+      <div class="grupo-1">
+       <div class="box">
+         <figure>
+            <a href="#">
+             <img src="../assets/Pasta-Nostra-logo-blanco-_1_.svg" alt="Logo pasta nostra">
+            </a>
+         </figure>
+       </div>
+       <div class="box">
+         <h6>NOSOTROS</h6>
+         <p>Somos Pasta Nostra, un Restaurante de pastas típicas Italianas. </p>
+         <p>Contamos con una distinguida carta, terraza natural, barra de tragos y gran variedad de vinos.</p>
+       </div>
+       <div class="box">
+         <h6>SEGUINOS</h6>
+         <div class="redes-sociales">
+           <i class="fa-brands fa-facebook-f"></i>
+           <i class="fa-brands fa-instagram"></i>
+           <i class="fa-brands fa-linkedin"></i>
+           <i class="fa-brands fa-tiktok"></i>
+         </div>
+       </div>
+      </div>
+      <div class="grupo-2">
+       <small>©copy; 2024 <b>Pasta Nostra</b> - Todos los derechos reservados.</small>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
