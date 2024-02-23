@@ -883,7 +883,7 @@ nav a {
     }
 
     .main-reservas {
-        width: 230px;
+        width: 242px;
     }
 
     .main-reservas h4 {
@@ -1400,13 +1400,13 @@ nav a {
     padding: 50px 20px 0px 20px;
    }
 
-   /* .img-contacto {
+   .img-contacto {
     background-image: url(../assets/imagen\ archivo\ contacto.jpg);
     height: 200px;
     background-size:cover;
     padding: 10px 20px;
     width: 100%;
-  }   */
+  }  
 
   .opciones-contacto a{
     font-size: 10px;
